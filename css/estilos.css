@@ -49,3 +49,114 @@ margin:0 auto;
 width:100%;
 border:1px;
 }
+
+/*Aca arranca el menu hamburguesa */
+
+header div.contenedor{
+place-content:flex-start;
+}
+
+header div contenedor nav{
+width:70%;
+display:flex;
+place-content: space between;
+
+}
+
+#menu, #menu-check{
+display: none;
+}
+
+@media only screen and (max-width: 900px){
+header div.contenedor, header div.contenedor ul, header div.contenedor ul li{
+display: inline;
+}
+header div.contenedor nav{
+width:100%;
+display:inline;
+}
+}
+
+@media only screen and (max-width: 700px){
+header h1{
+margin:0;
+}
+header div.contenedor{
+display:flex;
+place-content: space-between;
+
+}
+
+#menu-check:not(:checked) ~ nav {
+display: none;
+}
+#menu-check:checked ~ nav{
+display:block;
+}
+
+#menu{
+display:block;
+color: black;
+/* background-color: yellow; */
+font-size:1.2em;
+border:3px solid black;
+border-radius:0.3em;
+position:absolute;
+right:0.5em;
+top:0,5em;
+z-index:9999;
+}
+
+
+#menu:hover{
+
+background: grey;
+
+}
+
+#menu-cerrar{
+display:none;
+}
+
+#menu-check:checked ~ label #menu-abrir{
+display:none;
+}
+
+#menu-check:checked ~ label #menu-cerrar{
+display:block;
+}
+
+header div.contenedor nav{
+position:absolute;
+top: 0;
+right:0;
+height:100%;
+background-color: gold2;
+padding-top:0.5em;
+padding-right:1.5em;
+opacity:0.8;
+color: black;
+font-size:1.5em;
+
+}
+
+header div.contenedor nav ul a {
+color:black;
+background:none;
+
+}
+
+header div.contenedor nav ul, div.contenedor nav ul li {
+display:block;
+text-align:right;
+
+}
+
+
+}
+
+
+
+
+
+
