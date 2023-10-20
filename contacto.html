@@ -4,12 +4,16 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" conntent="widht=device-width, initial-scale=1.0">
-	<link rel="icon" href="icons/contacto.ico">
+		<link rel="stylesheet" href="css/estilos.css">
+		<link rel="icon" href="icons/contacto.ico">
 	
-	
-	
-	
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+			
 	<title>Contacto</title>
+	
+	<img src="img/contacto.jpg" alt="imagen de autos en filas"  class="cropped">
 	<nav>
 		<a href="Index.html">Home</a>
 		<a href="autos.html">Autos</a>
@@ -23,31 +27,31 @@
 <body>
 	<h1>Contacto</h1>
 	<form action="Link" method="POST" target="_blank">
-		<label for="firstname">Nombre</label>
-		<input size="40" type="text" name="firstname" id="firstname">
-		
+		<label for="firstname">Nombre </label>
+		<input size="50" type="text" name="firstname" id="firstname" class="campos">
+			<br>
 		<label for="lastname">Apellido</label>
-		<input size="40" type="text" name="lastname" id="lastname">
-		
+		<input size="50" type="text" name="lastname" id="lastname" class="campos">
+			<br>
 		<label for="Mail">Correo Electronico</label>
-		<input size="50" type="email" name="mail" id="mail">
-	
+		<input size="40" type="email" name="mail" id="mail" class="campos">
+			<br>
 		<label for="Telefono">Telefono</label>
-		<input size="20" type="number" name="telefono" id="telefono">
-		
-		<input type="checkbox" name="opcion" value="1">¿Tienes Licencia Valida en el Pais?
-		
-		<input type="checkbox" name="opcion" value="2">¿Eres Cliente?
-				
-		<textarea name="comentario" rows="10" cols="40">Escribe tu consulta</textarea>
-	
-		<input type="submit" value="ENVIAR">
+		<input size="20" type="number" name="telefono" id="telefono" class="campos">
+			<br>
+		<input type="checkbox" name="opcion" value="1">¿Esta interesado en el plan empresa?
+			<br>
+		<input type="checkbox" name="opcion" value="2">¿Estas interesado en el plan viajero frecuente?
+			<br>	
+		<textarea name="comentario" rows="10" cols="40" class="campos">Escribe tu consulta</textarea>
+			<br>
+		<input type="submit" value="ENVIAR" class="boton">
 	</form>
 	
 		
 	
 	
 
-	
+	<footer id="footer">Copyright (C) 2023. Todos los derechos reservados <br> Pagina desarrollada por GJTeam</footer>
 </body>
 </html>
