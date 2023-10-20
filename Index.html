@@ -4,24 +4,63 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" conntent="widht=device-width, initial-scale=1.0">
-	<link rel="icon" href="icons/index.ico">
+		<link rel="stylesheet" href="css/estilos.css">
+		<link rel="icon" href="icons/index.ico">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+		
 	<title>Home</title>
+	<img src="img/index.jpg" alt="imagen de autos y personas"  class="cropped">
 	<nav>
-		<a href="Index.html">Home</a>
-		<a href="autos.html">Autos</a>
-		<a href="premium.html">Premium</a>
-		<a href="faqs.html">Preguntas Frecuentes</a>
-		<a href="contacto.html">Contacto</a>
-	</nav>
+			<a href="Index.html">Home</a>
+			<a href="autos.html">Autos</a>
+			<a href="premium.html">Premium</a>
+			<a href="faqs.html">Preguntas Frecuentes</a>
+			<a href="contacto.html">Contacto</a>
+		</nav>
+	
+	
 		
 </head>
 
 <body>
-	<h1>Formulario Reserva</h1>
-	<p>Aqui debe ir un formulario para reservar un coche, incluyendo lugar de entrega, 
-	fecha de retiro, devolucion, hora de entrega y hora de devolucion, junto con un 
-	codigo promocional en caso de poseer uno</p>
 	
+	
+	
+	<h1>Formulario Reserva</h1>
+	
+	<form action="Link" method="POST" target="_blank">
+		
+		<label for="firstname">Nombre</label>
+		<input size="50" type="text" name="firstname" id="firstname" class="campos">
+			<br>
+		<label for="lastname">Apellido</label>
+		<input size="50" type="text" name="lastname" id="lastname" class="campos">
+			<br>
+		<label for="Mail">Correo Electronico</label>
+		<input size="50" type="email" name="mail" id="mail" class="campos">
+			<br>
+		<label for="Telefono">Telefono</label>
+		<input size="20" type="number" name="telefono" id="telefono" class="campos">
+			<br>
+		<label for="retiro">Fecha de Retiro del Vehiculo</label>
+		<input size="40" type="date" name="dateuno" id="dateuno" class="campos">
+			<br>
+		<label for="devolucion">Fecha de Devolucion del Vehiculo</label>
+		<input size="40" type="date" name="datedos" id="datedos" class="campos">
+			<br>
+		<input type="checkbox" name="opcion" value="1">¿Tienes Licencia Valida en el Pais?
+			<br>
+		<input type="checkbox" name="opcion" value="2">¿Eres Cliente?
+			<br>
+		<input type="submit" value="ENVIAR" class="boton">
+	
+	</form>
+	
+	<section>
 	<h1> Quienes somos?</h1>
 	<p>Somos una empresa recientemente formada pero en rapido crecimiento y
 	con contratos con diversas cadenas hotelereas, empresas de tranporte nautico y 
@@ -38,10 +77,15 @@
 	 <br> Disponemos de una amplia flota de vehiculos que se adaptan a las necesidades 
 	 de movilidad de todo tipo de pasajeros. Ya sea para vacaciones familiares, viajes 
 	 con amigos, escapadas en pareja o por negocios</p>
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3284.1798275554324!2d-58.374493288254605!3d-34.599613972842995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDM1JzU4LjYiUyA1OMKwMjInMTguOSJX!5e0!3m2!1ses!2sar!4v1697220163397!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>	
+	 </section>
+	 
+	 <div>
+		<h1>Donde esta nuestra sede central</h1>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3284.1798275554324!2d-58.374493288254605!3d-34.599613972842995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDM1JzU4LjYiUyA1OMKwMjInMTguOSJX!5e0!3m2!1ses!2sar!4v1697220163397!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>	
+	</div>
 
 <!-- Los iconos usados en esta web provienen de: https://www.flaticon.es-->
 
+<footer id="footer">Copyright (C) 2023. Todos los derechos reservados <br> Pagina desarrollada por GJTeam</footer>
 </body>
 </html>
