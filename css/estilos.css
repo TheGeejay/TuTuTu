@@ -1,30 +1,31 @@
 /* En este documento se estableceran los estilos a usar en la web */
 
-
 *{
-background:gold;
-margin:2px;
-padding:2px;
+	background:gold;
+	margin:2px;
+	padding:2px;
 
 
-}
+ }
 
-h1{
-color:black;
-font-size:24px;
+h1 {
+	color:black;
+	font-size:24px;
+	}
 
-}
+
 
 p{font-family: 'Rubik', sans-serif;} 
 
 section{
-height:100px;
 background:gold;
 border-color:black;
 max-width:100%;
 
 
 }
+
+
 
 .cropped{
 height: 150px;
@@ -43,7 +44,9 @@ background:grey;
 
 
 
-#footer{
+
+
+#idfooter{
 text-align:center;
 margin:0 auto;
 width:100%;
@@ -51,6 +54,8 @@ border:1px;
 }
 
 /*Aca arranca el menu hamburguesa */
+
+
 
 header div.contenedor{
 place-content:flex-start;
@@ -67,9 +72,17 @@ place-content: space between;
 display: none;
 }
 
-@media only screen and (max-width: 900px){
-header div.contenedor, header div.contenedor ul, header div.contenedor ul li{
-display: inline;
+
+
+@media only screen and (max-width: 1024px){
+header h1{
+margin:20px;
+background-color:red;
+
+
+
+}
+
 }
 header div.contenedor nav{
 width:100%;
@@ -77,9 +90,30 @@ display:inline;
 }
 }
 
-@media only screen and (max-width: 700px){
+
+@media only screen and (max-width: 900px){
+header h1{
+margin:10px;
+background-color:blue;
+}
+header div.contenedor nav{
+width:100%;
+display:inline;
+}
+}
+
+@media only screen and (max-width: 600px){
 header h1{
 margin:0;
+background-color:green;
+
+
+.grid-container{
+justify-content:center;
+display:grid;
+grid-template-columns:300px 300px 400px;
+padding:10px;
+
 }
 header div.contenedor{
 display:flex;
@@ -98,6 +132,8 @@ display:block;
 display:block;
 color: black;
 /* background-color: yellow; */
+
+
 font-size:1.2em;
 border:3px solid black;
 border-radius:0.3em;
@@ -149,14 +185,67 @@ background:none;
 header div.contenedor nav ul, div.contenedor nav ul li {
 display:block;
 text-align:right;
-
+list-style:none;
 }
 
 
 }
 
+/* Carrousel */
+
+.slider-frame{
+width:1280px;
+height:auto;
+margin:50px auto 0;
+overflow:hidden;
+
+animation:slide 15s infinite alternate ease-in-out;
+
+}
 
 
+.slider-frame ul{
+display:flex;
+padding:0;
+width:400%
+
+}
+
+.slider-frame li{
+
+list-style:none;
+width:100%;
+
+
+
+}
+.
+.slider-frame img{
+width:100%;
+}
+
+@keyframes slide {
+0%{margin left:0%;}
+20%{margin left:0%;}
+
+25%{margin left:-100%;}
+45%{margin left:-100%;}
+
+50%{margin left:-200%;}
+70%{margin left:-200%;}
+
+75%{margin left:-300%;}
+95%{margin left:-300%;}
+
+
+
+
+}
+
+.grid-container{
+display:grid;
+grid-template-columns:repeat(3, auto);
+padding:10px;
 
 
 
